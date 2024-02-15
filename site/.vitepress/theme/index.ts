@@ -7,6 +7,8 @@ import PostList from './components/common/PostList.vue';
 import Post from './components/common/Post.vue';
 import PostHeader from './components/common/PostHeader.vue';
 import Guide from './components/guide/Guide.vue';
+import Feature from './components/index/Feature.vue';
+import Functionality from './components/index/Functionality.vue';
 // Custom styles
 import './custom.css';
 
@@ -19,5 +21,7 @@ export default {
     app.component('Post', Post);
     app.component('PostHeader', PostHeader);
     app.component('Guide', Guide);
+    app.component('Feature', Feature);
+    app.component('Functionality', Functionality);
   }
 };
