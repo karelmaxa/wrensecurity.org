@@ -6,7 +6,7 @@ hero:
   text: Open-Source Platform
   tagline: Automate identity governance and secure access to all your applications in compliance with your company and industry standards, while providing the user experience users deserve.
   image:
-    src: /wrensecurity-transparent.png
+    src: /wren-logo.png
     alt: Wren Security logo
   actions:
     - theme: brand
@@ -19,136 +19,210 @@ hero:
 
 <Hero />
 
-<Feature logo="/wrenidm-logo.png" url="/projects/wrenidm/">
+<Product logo="/wren-lock.svg">
   <template #title>
     Identity Management
   </template>
   <template #description>
-    Wren:IDM is a community‐developed identity management system with a flexible data model, multiple extension points and scripting support, including JavaScript and Groovy. It can connect to and manage a wide range of systems through the Identity Connector Framework (Wren:ICF).
+    Regain control over people's access. Use Wren:IDM to streamline your identity governance and gain full control over where and why users have access. Increase productivity with efficient access provisioning. Reduce operational labour through automation and user self-service. And ensure that everyone has all the access they need, but no other.
   </template>
-  <template #functionalities>
-    <Functionality>
-      <template #name-1>
+  <template #feature-list>
+    <Feature>
+      <template #name>
         Identity Lifecycle Management
       </template>
-      <template #description-1>
-        Automatically retrieve users from the source system and provision accounts to the target systems. This process is completed in seconds instead of days, with no human errors, waiting for access, or undocumented access rights, orphaned accounts. It enables fast onboarding and immediate offboarding when trust is lost.
+      <template #description>
+        Automatically retrieve users from the source system and provision accounts to the target systems according to clearly defined rules.
       </template>
-      <template #name-2>
-        Automations/Workflows
+    </Feature>
+    <Feature>
+      <template #name>
+        Workflows
       </template>
-      <template #description-2>
-        Define your workflow and approval processes, and empower managers to make decisions in access provisioning while leaving the rest to automation. This way, you can ensure that the responsibility is placed in the right hands, instead of burdening your administrators.
+      <template #description>
+        Define your workflow and approval processes, and empower managers to make decisions in access provisioning while leaving the rest to automation.
       </template>
-      <template #name-3>
-        Extenstions/extension points
+    </Feature>
+    <Feature>
+      <template #name>
+        Extenstions
       </template>
-      <template #description-3>
-        Utilize a variety of extension points to customize the logic or the CRESTful interfaces to integrate with the tools you are used to and make sure that the identity management smoothly integrates into your existing environment.
+      <template #description>
+        Utilize a variety of extension points to customize the logic or the CRESTful interfaces to and make sure that the identity management smoothly integrates into your existing environment.
       </template>
-    </Functionality>
-    <Functionality>
-      <template #name-1>
+    </Feature>
+    <Feature>
+      <template #name>
         Auditing
       </template>
-      <template #description-1>
-        Dig into the built-in audit tracks or integrate them with log collection and SIEM tools to get an overview of the activities, synchronizations, reconciliations, or access and authentication requests, and gain instant insight into the access rights at your disposal.
+      <template #description>
+        Dig into the built-in audit tracks or integrate them with log collection and SIEM tools to get complete insight into the identity management activities.
       </template>
-      <template #name-2>
+    </Feature>
+    <Feature>
+      <template #name>
         User Self-Service
       </template>
-      <template #description-2>
-        The standalone end-user interface provides account self-service, allowing users to independently change or reset their passwords and place access requests, while managers are also able to grant access with a click of a button. This allows users to perform essential tasks on their own with experience tailored to their needs, leaving the administration interface for administrators. 
+      <template #description>
+        Built-in self-service allows users to manage their identities. The changes are immediately reflected where necessary.
       </template>
-      <template #name-3>
+    </Feature>
+    <Feature>
+      <template #name>
         Connector Framework
       </template>
-      <template #description-3>
-        The Identity Connector Framework ensures a seamless connection of any source or target system. Utilize prefabricated connectors to integrate applications directly or use general scripted ones to create custom solutions and manage every piece of software withinin your organization.
+      <template #description>
+        With connectors provided by Wren:ICF framework you can  manage every piece of software within your organization.
       </template>
-    </Functionality>
+    </Feature>
   </template>
-</Feature>
+</Product>
 
-<Feature logo="/wrenam-logo.png" url="/projects/wrenam/">
+<Product logo="/wren-mockup-phone.svg">
   <template #title>
     Access Management
   </template>
   <template #description>
-    Wren:AM provides mobile support out of the box, with full OAuth 2.0 and OpenID Connect (OIDC) support - modern protocols that provide the most efficient method for developing secure native or web-based mobile applications optimized for bandwidth and CPU.
+    A secure portal for your digital services. Use Wren:AM to establish consistent access policies and advanced observability across all your applications, cloud services and IT infrastructure with minimal effort. Avoid multiple logins with Single Sign-On to deliver a superior login experience for your users.
   </template>
-  <template #functionalities>
-    <Functionality>
-      <template #name-1>
+  <template #feature-list>
+    <Feature>
+      <template #name>
         Single Sign-on
       </template>
-      <template #description-1>
-        Centralize authentication and uniformly protect all your applications according to the highest security standards, while also improving the login experience. Instead of burdening users with multiple login forms, provide them with a customized gateway to access all your services without compromising security.
+      <template #description>
+        Centralize authentication and uniformly protect all your applications according to the highest security standards, while also improving the login experience. 
       </template>
-      <template #name-2>
+    </Feature>
+    <Feature>
+      <template #name>
         Multi-Factor Authentication
       </template>
-      <template #description-2>
-        Add OTP, SMS, Email, or Duo verification to your authentication flow for additional protection against compromised passwords and increase the safety of your critical applications.
+      <template #description>
+        Add OTP, SMS, Email, or 3rd party MFA tools to your authentication flow for additional protection against compromised passwords.
       </template>
-      <template #name-3>
+    </Feature>
+    <Feature>
+      <template #name>
         Adaptive authentication
       </template>
-      <template #description-3>
-        Do not compromise between security and login experience. Adjust the authentication requirements based on the risk evaluated through intelligent inspection of IP address, geographical location, used device, and user behavior. 
+      <template #description>
+        Do not compromise between security and login experience. Adjust the authentication requirements based on the evaluated risk.
       </template>
-    </Functionality>
-    <Functionality>
-      <template #name-1>
+    </Feature>
+    <Feature>
+      <template #name>
         Identity Provider
       </template>
-      <template #description-1>
+      <template #description>
         Take control of access to external or cloud services. Leverage an identity provider to supply service providers with authentication that complies with your policy and security rules.
       </template>
-      <template #name-2>
+    </Feature>
+    <Feature>
+      <template #name>
         Federations
       </template>
-      <template #description-2>
-        Establish an identity federation or connect with an existing one to link the identities across multiple identity management systems, while maintaining a high level of security and complete control over the data being shared.
+      <template #description>
+        Establish an identity federation or connect with an existing one to link the identities across multiple identity management systems.
       </template>
-      <template #name-3>
+    </Feature>
+    <Feature>
+      <template #name>
         Standard protocols
       </template>
-      <template #description-3>
-        OAuth 2.0, OIDC, SAML,... Choose from a variety of authentication protocols to easily integrate your applications according to industry standards. Or make use of the LDAP user store when customizations are needed.
+      <template #description>
+        OAuth 2.0, OIDC, SAML,... Choose from a variety of authentication protocols to easily integrate your applications according to industry standards. 
       </template>
-    </Functionality>
-    <Functionality>
-      <template #name-1>
+    </Feature>
+    <Feature>
+      <template #name>
         Social Login
       </template>
-      <template #description-1>
+      <template #description>
         Delegate authentication to 3rd-party services like Google, Facebook, GitHub, or any other compatible identity provider, to make the sign-in and onboarding even more convenient.
       </template>
-      <template #name-2>
+    </Feature>
+    <Feature>
+      <template #name>
         User Self-service
       </template>
-      <template #description-2>
-        Place the user self-registration, account management, and password reset features where they belong. Empower your users to consistently manage their account across the platform without the need to implement it in your application.
+      <template #description>
+        Place the user self-registration, account management, and password reset features where they belong, without the need to re-implement it in your apps.
       </template>
-    </Functionality>
+    </Feature>
   </template>
-</Feature>
+</Product>
 
-<Feature logo="/wrends-logo.png" url="/projects/wrends/">
+<Product logo="/wren-user.svg">
   <template #title>
     Directory Service
   </template>
   <template #description>
-    Use a centralized repository to store and organize user and resource information, and streamline management of your digital identities. The LDAP-compliant directory provides uniform access, in compliance with industry standards, to efficiently and securely control access within even the most complex IT environments.
+    Efficiently store and organize your digital identities, even in the most complex IT environments. Wren:DS provides a secure and scalable directory service that complies with industry standards.
   </template>
-</Feature>
+  <template #feature-list>
+    <Feature>
+      <template #name>
+        Uniform Access
+      </template>
+      <template #description>
+        Access the data using the established LDAP (Lightweight Directory Access Protocol) or leverage the REST API where necessary.
+      </template>
+    </Feature>
+    <Feature>
+      <template #name>
+        Efficiency
+      </template>
+      <template #description>
+        It can withstand even the highest loads on its own, but use replicated deployments to make your critical authentication services highly available.
+      </template>
+    </Feature>
+    <Feature>
+      <template #name>
+        Security
+      </template>
+      <template #description>
+        Fine-grained access control, coupled with a comprehensive audit, ensures that your most valuable data is always secure.
+      </template>
+    </Feature>
+  </template>
+</Product>
 
-<Feature logo="/wrenig-logo.png" url="/projects/wrenig/">
+<Product>
   <template #title>
     Identity Gateway
   </template>
   <template #description>
-    Put an identity gateway in front of your applications or APIs to ensure consistent identity security for all your services. The proxy approach brings protection for applications that do not have sufficient built-in security features, including problematic legacy applications. It will also allow you to monitor the usage of your services by users and manage security features without making changes to the container or the application itself.
+    Place an identity gateway in front of your applications, microservices, and APIs to ensure consistent security measures, regardless of their technology or authentication capabilities. Including the most problematic legacy systems.
   </template>
-</Feature>
+  <template #feature-tiles>
+    <FeaturesIG />
+  </template>
+</Product>
+
+<Product>
+  <template #title>
+    Project Origin
+  </template>
+  <template #description>
+    Though our project originated with code that ForgeRock™ had previously released, we are not affiliated with ForgeRock™ in any way. Our projects are based on the very latest code from what was available under a CDDL license (OpenAM 13.5+, OpenDJ 3.5+, OpenIDM 4.5+, and OpenIG 4.0+). ForgeRock™ no longer releases any of the most recent versions of their software under an open-source license. ForgeRock™’s “Community Edition” are ancient versions of the projects. Join our community for the latest and greatest.
+  </template>
+</Product>
+
+<Product>
+  <template #title>
+    Deployment
+  </template>
+  <template #description>
+    Take control of your identities, regardless of your infrastructure. Whether it's your own hardware, various cloud providers, or any kind of hybrid environment. Clustered deployments for availability and scalability is a matter of course. Official Docker images are convenient for container deployments and Kubernetes operations. However, you can build your own when customizations are needed, or when your DevSecOps standards require an additional layer of supply chain security measures.
+  </template>
+</Product>
+
+<Product>
+  <template #title>
+    DevOps Ready
+  </template>
+  <template #description>
+    Utilize configuration management tools and adopt a configuration-as-code approach. This is especially useful when an administration interface is impractical, or when you need to align configurations across multiple environments or swiftly create new ones.
+  </template>
+</Product>

@@ -1,45 +1,45 @@
 <template>
   <section
-    id="functionalities"
-    class="items"
+    id="highlights"
+    class="box-container"
   >
     <div class="box">
       <h2>
-        <slot name="name-1" />
+        Protection
       </h2>
       <p>
-        <slot name="description-1" />
+        An additional layer of protection that provides authentication (and authorization) according to your security standards for any application.
       </p>
     </div>
     <div class="box">
       <h2>
-        <slot name="name-2" />
+        Simplicity
       </h2>
       <p>
-        <slot name="description-2" />
+        Works as a proxy, providing trustworthy security information to your systems. Simplifying implementation in the applications itself.
       </p>
     </div>
     <div class="box">
       <h2>
-        <slot name="name-3" />
+        Control
       </h2>
       <p>
-        <slot name="description-3" />
+        Changes in the security configurations can be made without altering the applications and central audit provides insight into potentially malicious activities.
       </p>
     </div>
   </section>
 </template>
 
 <style scoped>
-.items {
+.box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.items .box {
+.box-container .box {
   transition: color 0.5s, background-color 0.5s;
-  padding: 28px 36px;
+  padding: 20px 20px 0 0;
   border-radius: 8px;
   flex: 0 32%;
   font-size: 14px;
@@ -47,18 +47,19 @@
 }
 
 @media (max-width: 768px) {
-  .items .box {
+  .box-container .box {
     flex: 0 100%;
     margin-bottom: 20px;
   }
 }
 
-#functionalities {
+#highlights {
   max-width: 1152px;
   margin: 0px auto;
+  color: var(--vp-c-text-2);
 }
 
-#functionalities h2 {
+#highlights h2 {
   font-weight: 600;
   font-size: 20px;
   letter-spacing: -0.4px;
@@ -67,19 +68,16 @@
   margin-bottom: 0.75em;
 }
 
-#functionalities p {
+#highlights p {
   font-weight: 400;
   font-size: 15px;
 }
 
-#functionalities .box {
+#highlights .box {
   background-color: transparent;
 }
 
-#functionalities h3 {
+#highlights h3 {
   margin-bottom: 0.6em;
-}
-#functionalities .box {
-  padding: 20px 20px 20px 0;
 }
 </style>

@@ -1,55 +1,55 @@
 <template>
   <section
     id="highlights"
-    class="vt-box-container"
+    class="box-container"
   >
-    <div class="vt-box">
+    <div class="box">
       <h2>Comprehensive</h2>
       <p>
-        All the tools you need for building reliable Identity and Access Management systems, completely open-source, without vendor lock-in. No licensing fees.
+        All the tools you need for building reliable Identity and Access Management systems.
       </p>
     </div>
-    <div class="vt-box">
+    <div class="box">
       <h2>Versatile</h2>
       <p>
-        Use the right amount of functionality you need, whether you're after a single-purpose tool or a complex IAM system. Start simple and scale up.
+        Start small, adapt as needed, whether a basic tool or comprehensive IAM system.
       </p>
     </div>
-    <div class="vt-box">
-      <h2>Reliable</h2>
+    <div class="box">
+      <h2>Open</h2>
       <p>
-        Standing on the shoulders of giants, carefully maintained for maximum stability, while continuing with open-source principles.
+        Completely open-source. Without vendor lock-in. No licensing fees.
       </p>
     </div>
-    <div class="vt-box">
+    <div class="box">
       <h2>Secure</h2>
       <p>
-        Regular upgrades, security analysis as a part of CI pipelines, transparent vulnerability management - published as CVEs.
+        Regular upgrades, security analysis, transparent vulnerability management - published as CVEs.
       </p>
     </div>
   </section>
 </template>
 
 <style scoped>
-.vt-box-container {
+.box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.vt-box-container .vt-box {
+.box-container .box {
   transition: color 0.5s, background-color 0.5s;
-  padding: 28px 36px;
+  padding: 28px 28px 28px 0;
   border-radius: 8px;
-  flex: 0 25%;
+  flex: 0 20%;
   font-size: 14px;
   font-weight: 500;
 }
 
 @media (max-width: 768px) {
-  .vt-box-container .vt-box {
+  .box-container .box {
     flex: 0 100%;
-    margin-bottom: 20px;
+    padding: 28px;
   }
 }
 
@@ -73,14 +73,11 @@
   font-size: 15px;
 }
 
-#highlights .vt-box {
+#highlights .box {
   background-color: transparent;
 }
 
 #highlights h3 {
   margin-bottom: 0.6em;
-}
-#highlights .vt-box {
-  padding: 20px 20px 20px 0;
 }
 </style>
