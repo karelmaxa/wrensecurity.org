@@ -9,6 +9,7 @@ import PostHeader from './components/common/PostHeader.vue';
 import Guide from './components/guide/Guide.vue';
 import Feature from './components/index/Feature.vue';
 import Functionality from './components/index/Functionality.vue';
+import Hero from './components/index/Hero.vue';
 // Custom styles
 import './custom.css';
 
@@ -23,5 +24,6 @@ export default {
     app.component('Guide', Guide);
     app.component('Feature', Feature);
     app.component('Functionality', Functionality);
+    app.component('Hero', Hero);
   }
 };

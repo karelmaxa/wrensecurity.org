@@ -43,10 +43,20 @@
   .project-origin {
     padding: 16px 48px;
   }
+  .VPHome .VPHero p.text {
+    font-size: 44px;
+  }
 }
 
 @media (min-width: 960px) {
   .project-origin {
     padding: 16px 64px;
   }
+  .VPHome .VPHero p.text {
+    font-size: 52px;
+  }
+}
+
+.VPHome .VPHero {
+  padding-bottom: 48px;
 }

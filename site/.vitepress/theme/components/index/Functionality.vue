@@ -1,53 +1,85 @@
 <template>
-  <div class="item grid-2">
-    <div class="functionality">
-      <article class="box">
-        <h2 class="title">
-          <slot name="name" />
-        </h2>
-        <p class="details">
-          <slot name="description" />
-        </p>
-      </article>
+  <section
+    id="functionalities"
+    class="items"
+  >
+    <div class="box">
+      <h2>
+        <slot name="name-1" />
+      </h2>
+      <p>
+        <slot name="description-1" />
+      </p>
     </div>
-  </div>
+    <div class="box">
+      <h2>
+        <slot name="name-2" />
+      </h2>
+      <p>
+        <slot name="description-2" />
+      </p>
+    </div>
+    <div class="box">
+      <h2>
+        <slot name="name-3" />
+      </h2>
+      <p>
+        <slot name="description-3" />
+      </p>
+    </div>
+  </section>
 </template>
 
 <style scoped>
-.item.grid-2 {
-  width: calc(100%/3);
-  padding: 8px;
-}
-
-.functionality {
-  display: block;
-  border: 1px solid var(--vp-c-bg-soft);
-  border-radius: 12px;
-  height: 100%;
-  background-color: var(--vp-c-bg-soft);
-  transition: border-color 0.25s, background-color 0.25s;
-}
-
-.box {
+.items {
   display: flex;
-  flex-direction: column;
-  padding: 24px;
-  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.title {
-  line-height: 24px;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--vp-c-text-1);
-}
-
-.details {
-  flex-grow: 1;
-  padding-top: 8px;
-  line-height: 24px;
+.items .box {
+  transition: color 0.5s, background-color 0.5s;
+  padding: 28px 36px;
+  border-radius: 8px;
+  flex: 0 32%;
   font-size: 14px;
   font-weight: 500;
-  color: var(--vp-c-text-2);
+}
+
+@media (max-width: 768px) {
+  .items .box {
+    flex: 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
+#functionalities {
+  max-width: 1152px;
+  margin: 0px auto;
+}
+
+#functionalities h2 {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  color: var(--vp-c-text-1);
+  transition: color 0.5s;
+  margin-bottom: 0.75em;
+}
+
+#functionalities p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#functionalities .box {
+  background-color: transparent;
+}
+
+#functionalities h3 {
+  margin-bottom: 0.6em;
+}
+#functionalities .box {
+  padding: 20px 20px 20px 0;
 }
 </style>

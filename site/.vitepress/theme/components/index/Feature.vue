@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="feature">
-    <div class="custom-block">
+    <div class="custom">
       <h2 class="feature-title">
         <slot name="title" />
       </h2>
@@ -19,17 +19,8 @@ defineProps({
             <slot name="description" />
           </p>
         </div>
-        <div class="feature-logo">
-          <a
-            v-if="url"
-            :href="withBase(url)"
-          ><img :src="logo"></a>
-          <span v-else><img :src="logo"></span>
-        </div>
       </div>
-      <div class="items">
-        <slot name="functionalities" />
-      </div>
+      <slot name="functionalities" />
     </div>
   </div>
 </template>
@@ -41,8 +32,10 @@ defineProps({
   justify-content: center;
 }
 
-.feature .custom-block {
+.feature .custom {
   max-width: 1152px;
+  padding: 0px;
+  border-top: 1px solid var(--vp-c-divider);
 }
 
 @media (min-width: 640px) {
@@ -60,39 +53,46 @@ defineProps({
 .feature-title {
   margin: 30px 0;
   font-size: 32px;
+  line-height: 32px;
   font-weight: 600;
   color: var(--vp-c-text-1);
 }
 
 .content {
   width: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
   margin: -8px;
+  padding-bottom: 20px;
 }
 
 .intro {
-  display: flex;
   float: left;
-  width: 66.666%;
-  flex-wrap: wrap;
+  flex: 0 100%;
 }
 
 .textarea {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 20px;
   padding: 8px;
 }
 
 .feature-logo {
-  float: left;
-  width: 33.333%;
-  padding-left: 40px;
+  float: right;
+  flex: 0 33%;
+  padding: 10px;
 }
 
-.items {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -8px;
+@media (max-width: 768px) {
+  .content {
+    padding-bottom: none;
+  }
+  .content .intro {
+    flex: 0 100%;
+    margin-bottom: 20px;
+  }
+  .content .feature-logo {
+    flex: 0 100%;
+    margin-bottom: 20px;
+  }
 }
-
 </style>
