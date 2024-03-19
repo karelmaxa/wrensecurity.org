@@ -7,10 +7,11 @@ import PostList from './components/common/PostList.vue';
 import Post from './components/common/Post.vue';
 import PostHeader from './components/common/PostHeader.vue';
 import Guide from './components/guide/Guide.vue';
-import Product from './components/index/Product.vue';
-import Feature from './components/index/Feature.vue';
-import Hero from './components/index/Hero.vue';
-import FeaturesIG from './components/index/FeaturesIG.vue';
+import FeatureList from './components/index/FeatureList.vue';
+import FeatureListItem from './components/index/FeatureListItem.vue';
+import HorizontalList from './components/index/HorizontalList.vue';
+import HorizontalListItem from './components/index/HorizontalListItem.vue';
+import Section from './components/index/Section.vue';
 // Custom styles
 import './custom.css';
 
@@ -23,9 +24,10 @@ export default {
     app.component('Post', Post);
     app.component('PostHeader', PostHeader);
     app.component('Guide', Guide);
-    app.component('Product', Product);
-    app.component('Feature', Feature);
-    app.component('Hero', Hero);
-    app.component('FeaturesIG', FeaturesIG);
+    app.component('FeatureList', FeatureList);
+    app.component('FeatureListItem', FeatureListItem);
+    app.component('HorizontalList', HorizontalList);
+    app.component('HorizontalListItem', HorizontalListItem);
+    app.component('Section', Section);
   }
 };

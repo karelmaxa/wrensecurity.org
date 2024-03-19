@@ -127,10 +127,5 @@ export default defineConfig({
     // Ignore all localhost links
     /^https?:\/\/localhost/,
   ],
-  vite: {
-    build: {
-      minify: false
-    },
-  },
   buildEnd: genFeed
 });
